@@ -21,6 +21,6 @@ jobs:
         ls
         git add test_file/test.json
         git commit -m "test commit from action"
-        git push origin master
+        git push https:// master${{ secrets.GITHUB_TOKEN }}@github.com/test_my_action.git master
         
 
