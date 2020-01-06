@@ -16,3 +16,7 @@ jobs:
         cd test_file
         git --version
         touch test.json
+        ls
+        git add test.json
+        git commit -m "test commit from action"
+
