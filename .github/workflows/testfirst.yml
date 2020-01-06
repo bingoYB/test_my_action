@@ -13,10 +13,15 @@ jobs:
       run: echo Hello, world!
     - name: Run a multi-line script
       run: |
+        git config user.email "github action"
+        git config user.name "github action"
+        git config user.password ${{ secrets.GITHUB_TOKEN }}
         cd test_file
         git --version
         touch test.json
         ls
         git add test.json
         git commit -m "test commit from action"
+        git push origin master
+        
 
