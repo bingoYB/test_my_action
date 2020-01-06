@@ -21,6 +21,5 @@ jobs:
         ls
         git add test_file/test.json
         git commit -m "test commit from action"
-        git push origin master 
         
 
