@@ -21,7 +21,7 @@ jobs:
         ls
         git add test_file/test.json
         git commit -m "test commit from action"
-        echo ${GITHUB_ACTOR}
-        echo ${GITHUB_REPOSITORY}
+        remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+        git push "${remote_repo}" master
         
 
