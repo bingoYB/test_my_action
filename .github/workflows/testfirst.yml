@@ -20,6 +20,8 @@ jobs:
 
         git add -A
         git commit -m "test commit from action"
-        git push https:// master${{ secrets.GITHUB_TOKEN }}@github.com/test_my_action.git master
+        remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+        INPUT_BRANCH=${INPUT_BRANCH:-master}
+        git push "${remote_repo}" HEAD:${INPUT_BRANCH}
         
 
