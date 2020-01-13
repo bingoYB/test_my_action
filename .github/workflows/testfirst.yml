@@ -1,4 +1,4 @@
-name: CI
+name: test-action
 
 on: [push]
 
@@ -13,6 +13,7 @@ jobs:
       run: echo Hello, world!
     - name: Run a multi-line script
       run: |
+        node src/action.js
         git config user.email "github action"
         git config user.name "github action"
         git config user.password ${{ secrets.GITHUB_TOKEN }}
