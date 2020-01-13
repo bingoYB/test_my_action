@@ -15,6 +15,11 @@ jobs:
       run: |
         npm install
         node src/main.js
+    - name: push task
+      uses: push-your-github
+      with:
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: master
 # git config user.email "github action"
 # git config user.name "github action"
 # git config user.password ${{ secrets.GITHUB_TOKEN }}
