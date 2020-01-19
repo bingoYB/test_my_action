@@ -15,7 +15,7 @@ jobs:
       uses: bingoYB/push-your-github@release-v1
       with:
         GITHUB_TOKEN: ${{ secrets.git_token }}
-        BRANCH: master
+        PUSH_BRANCH: master
 # git config user.email "github action"
 # git config user.name "github action"
 # git config user.password ${{ secrets.GITHUB_TOKEN }}
