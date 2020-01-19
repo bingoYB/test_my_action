@@ -16,7 +16,7 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.git_token }}
         BRANCH: master
-# git config user.email "github action"
+# git config user.email "github action" 
 # git config user.name "github action"
 # git config user.password ${{ secrets.GITHUB_TOKEN }}
 # git --version
