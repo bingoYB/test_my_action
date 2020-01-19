@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
-      run: echo Hello, world!
+      run: pwd
     - name: push task
       uses: bingoYB/push-your-github@release-v1
       with:
